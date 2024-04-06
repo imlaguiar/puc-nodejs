@@ -1,0 +1,10 @@
+{{#each users}}
+ <div>{{name}} - {{email}}</div>
+ <br />
+{{/each}}
+
+<form action="/users/delete" method="POST">
+  <label>Deletar usuario com email:</label>
+  <input type="email" name="email" />
+  <button type="submit">Send</button>
+</form>
